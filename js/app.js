@@ -8,6 +8,7 @@ const imgGifPoll = document.querySelector("#imgGifPoll");
 
 // STEP 4 - Create a function called handleFileSelect
 function handleFileSelect(e) {
+  e.preventDefault();
   const reader = new FileReader(); //helps read file
 
   reader.addEventListener("load", e => {
